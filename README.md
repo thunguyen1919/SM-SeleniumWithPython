@@ -9,8 +9,8 @@ Setup
     + selenium
     + pytest-html
 5. Go to Terminal in PyCharm to install Package:
-   pip install webdriver_manager
-   pip install openpyxl
+   + pip install webdriver_manager
+   + pip install openpyxl
    
 6. To run Test Suites:
    pytest -v -s --html=Results\Report.html --self-contained-html  TestSuites
