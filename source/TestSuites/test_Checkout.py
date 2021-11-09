@@ -27,7 +27,6 @@ class TestCheckout():
         wait = WebDriverWait(self.driver, 20)
         wait.until(EC.text_to_be_present_in_element((By.XPATH, '//span[@id="Header_LoginViewHeader_LoginName1"]'),
                                                     "ThuNguyen"))
-        self.driver.get_screenshot_as_file('.\\Results\\demo.png')
 
     def test_buy_products_when_not_logged_in(self, setup):
         self.driver.get('http://supermarket-tws.somee.com/')
