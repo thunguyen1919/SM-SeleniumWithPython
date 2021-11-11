@@ -1,5 +1,8 @@
 # SM-SeleniumWithPython
-Supermarket project uses Selenium with Python for Automation for testing
+Supermarket project uses Selenium with Python for Automation testing
+
+Link website:
+http://supermarket-tws.somee.com/
 
 Setup
 1. Install PyCharm
