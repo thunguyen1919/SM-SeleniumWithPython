@@ -53,7 +53,7 @@ class TestCheckout():
             (By.TAG_NAME,'h2'),'LOGIN FORM'))
         self.driver.execute_script('window.scrollBy(0,280)')
 
-    def test_buy_products_when_not_logged_in(self, setup, login):
+    def test_buy_products_when_logged_in(self, setup, login):
         self.driver.find_element(By.LINK_TEXT, 'SHOP NOW').click()
         WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located(
             (By.CSS_SELECTOR, "ol[class='breadcrumb breadcrumb1 animated wow slideInLeft'] li[class='active']")))
@@ -75,6 +75,3 @@ class TestCheckout():
         self.driver.find_element(By.ID, 'MainContent_ButtonCheckout').click()
         WebDriverWait(self.driver, 20).until(EC.text_to_be_present_in_element(
             (By.TAG_NAME,'h2'),'Review Your Order & Complete Checkout'))
-
-
-
